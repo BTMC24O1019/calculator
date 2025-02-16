@@ -2,20 +2,3 @@ body{
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
 }
-.btn button{
-  font-size: 1.1em;
-  size: 1.2em;
-  background-color: rgb(122, 228, 228);
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.btn button:hover {
-  background-color: hsl(180, 66%, 40%);
-  font-size: 1.2em;
-}
-
-#countLabel {
-  font-size: 1.5em;
-  font-family: Arial, Helvetica, sans-serif;
-}
