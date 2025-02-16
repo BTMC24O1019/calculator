@@ -1,18 +1,33 @@
-const decBtn = document.getElementById("decBtn");
-const resBtn = document.getElementById("resBtn");
-const incBtn = document.getElementById("incBtn");
-const countLabel = document.getElementById("countLabel");
-let count = 0;
-decBtn.onclick = function(){count -= 1;
-    countLabel.textContent = count;
-}
-resBtn.onclick = function()
+const add = document.getElementById("add");
+const sub = document.getElementById("sub");
+const mult = document.getElementById("mult");
+const div = document.getElementById("div");
+
+add.onclick = function()
 {
-  count =0;
-  countLabel.textContent = count;
+  let num1 = Number(document.getElementById("num1").value);
+  let num2 = Number(document.getElementById("num2").value);
+  let result = num1 + num2;
+  document.getElementById("result").textContent = `result : ${result} `;
 }
-incBtn.onclick = function()
+sub.onclick = function()
 {
-  count += 1;
-  countLabel.textContent = count;
+  let num1 = Number(document.getElementById("num1").value);
+  let num2 = Number(document.getElementById("num2").value);
+  let result = num1 - num2;
+  document.getElementById("result").textContent = `result : ${result} `;
+}
+mult.onclick = function()
+{
+  let num1 = Number(document.getElementById("num1").value);
+  let num2 = Number(document.getElementById("num2").value);
+  let result = num1 * num2;
+  document.getElementById("result").textContent = `result : ${result} `;
+}
+div.onclick = function()
+{
+  let num1 = Number(document.getElementById("num1").value);
+  let num2 = Number(document.getElementById("num2").value);
+  let result = num1 / num2;
+  document.getElementById("result").textContent = `result : ${result} `;
 }
